@@ -9,7 +9,7 @@ import cv2
 #make a Cascade classifier object
 face_cascade = cv2.CascadeClassifier("C:\\Users\\geetk\\Downloads\\opencv2\\Library\\etc\\haarcascades\\haarcascade_frontalface_default.xml")
 
-#Reading the image as it is
+#Reading the image as it is,[add your own image path]
 img = cv2.imread("G:\Images\img1.jpg")
 
 #reading the image as gray scale image
@@ -25,7 +25,7 @@ for x,y,w,h in faces:
 #resizing the image to fit in the window
 resize = cv2.resize(img,(800,600))
     
-cv2.imshow("Gray",img)
+cv2.imshow("Gray",resize)
 
 cv2.waitKey(0)
 
